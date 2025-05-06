@@ -1,0 +1,55 @@
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.container > div {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.square,
+.circle,
+.triangle,
+.parallelogram,
+.diamond,
+.egg,
+.star,
+.heart {
+  display: grid;
+  place-content: center;
+  height: 250px;
+  width: 350px;
+}
+
+.square-shape {
+  height: 200px;
+  width: 200px;
+  background-color: #87ceeb;
+}
+
+.circle-shape {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.triangle-shape {
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 90px solid green;
+  margin: 2rem;
+}
+
+.egg-shape {
+  width: 130px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
